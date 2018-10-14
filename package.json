@@ -1,0 +1,23 @@
+{
+  "name": "listen-to-this-1",
+  "version": "1.0.0",
+  "description": "A record player",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-osx": "electron-packager . \"ltt\" --platform=darwin --icon ./src/img/icon.icns --out ./build --overwrite",
+    "build-linux": "electron-packager . \"ltt\" --platform=linux --icon ./src/img/icon.png --out ./build --overwrite",
+    "build-win32": "electron-packager . \"ltt\" --platform=win32 --icon ./src/img/icon.ico --out ./build --overwrite",
+    "build": "electron-packager . \"ltt\" --platform=all --icon ./src/img/icon --out ./build --overwrite"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Record",
+    "English"
+  ],
+  "author": "Sam",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
+}
